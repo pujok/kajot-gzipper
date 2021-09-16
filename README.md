@@ -22,3 +22,7 @@ Podle požadavků by měl cron job vypadat nějak takhle:
       0 0 1 * * (which python3) /prikladova/cesta/k/gzipper.py var/log/
       
 Provede se tedy ne přesně každých 30 dní, ale na začátku každého měsíce. Zagzipuje všechny soubory ve /var/log/ na místě (originály se smažou, gzipy budou ve var/log/). Pokud se nestane chyba, nedá žádný výpis.
+
+## Požadavky
+
+Skript nepoužívá žádnou knihovnu, která není builtin. Z builtin knihoven vyžaduje shutil, os, argparse, typing a gzip.
